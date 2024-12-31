@@ -15,8 +15,8 @@
 - 영화/시리즈 슬라이더
 - 호버
 
-bash
-netflix-clone/
+```
+netflix_clone/
 ├── index.html
 ├── css/
 │ ├── style.css
@@ -26,4 +26,4 @@ netflix-clone/
 │ ├── main.js
 │ └── slider.js
 └── images/
-
+```
