@@ -1,0 +1,32 @@
+body, html {
+    font-size: .85vw;
+}
+
+.logo {
+    display: inline-block;
+    width: 9.5em;
+    height: 2.5em;
+}
+
+.logo::before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/netflix-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 950px) {
+    .logo {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .logo {
+        width: 92.5px;
+        height: 25px;
+    }
+}
