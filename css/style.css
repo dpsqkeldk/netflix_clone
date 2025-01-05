@@ -1,11 +1,27 @@
 body, html {
     font-size: .85vw;
+    margin: 0;
+}
+
+.navagation-container {
+    height: 41px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .7) 10%, transparent);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 clamp(0px, 4vw, 60px);
+}
+
+.navagation-left, .navagation-right {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
     display: inline-block;
+    vertical-align: middle;
     width: 9.5em;
     height: 2.5em;
+    
 }
 
 .logo::before {
@@ -16,6 +32,33 @@ body, html {
     background-image: url('../images/netflix-logo.png');
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.tabbed-primary-navgation {
+    display: flex;
+    list-style: none;
+    color: white;
+}
+
+.navgation-menu {
+
+}
+
+.searchTab {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1px 6px;
+  }
+  
+  .search-icon {
+    width: 24px;
+    height: 24px;
+    color: white;
+  }
+
+.navgation-tab {
+    margin-left: 18px;
 }
 
 @media screen and (min-width: 950px) {
@@ -30,3 +73,10 @@ body, html {
         height: 25px;
     }
 }
+
+@media screen and (min-width: 950px) {
+    .navagation-container {
+        height: 68px;
+    }
+}
+    
